@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+.main_top {
+	width: 978px;
+	height: 25px;
+	border: 1px solid #E6E6E6;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: #F2F2F2;
+	line-height: 25px;
+}
+.main_top span{
+	padding:10px;
+}
+
+.main_content {
+	width: 980px;
+}
+
+.main_content_left {
+	width: 700px;
+	border: 1px solid #999;
+	margin-right: 10px;
+	float: left;
+}
+.main_content_left ul li{
+	margin: 20px;
+}
+
+.liebiao {
+	display: block;
+	line-height: 50px;
+	text-align: center;
+	
+	margin:20px;
+	border-bottom: 1px dotted #E6E6E6;
+}
+
+.biaoti {
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	font-weight:bold;
+	font-size:14px;
+	color:#1A64A2;
+}
+.biaoti img{
+	border: 0 none;
+	vertical-align: middle;
+}
+
+
+.wenzhang {
+	height: 65px;
+	display: block;
+	margin-bottom:5px;
+	
+}
+
+.biaoqian {
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	color: #666666;
+	border-bottom: 1px dotted #E6E6E6;
+}
+.biaoqian span{
+	color:#1A64A2;
+}
+
+.main_content_right {
+	width: 266px;
+	height: 560px;
+	border: 1px solid #999;
+	float: left;
+}
+.main_content_right span{
+	display: block;
+	height:35px;
+	line-height:35px;
+	margin-left:10px;
+}
+.main_content_right li{
+	background: url("../images/li_gray_arrow.gif") no-repeat scroll 2px 9px transparent;
+    border-bottom: 1px dotted #DDDDDD;
+    height: 20px;
+    margin: 0 4px;
+    overflow: hidden;
+    padding: 2px 2px 2px 10px;
+	
+}

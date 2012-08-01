@@ -1,0 +1,70 @@
+@charset "utf-8";
+.main {
+	margin: 0px auto;
+	width: 980px;
+	height: 600px;
+}
+
+.main_top {
+	width: 978px;
+	height: 25px;
+	border: 1px solid #E6E6E6;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: #F2F2F2;
+	line-height: 25px;
+}
+
+.main_content {
+	width: 980px;
+}
+
+.main_content_left {
+	width: 700px;
+	border: 1px solid #999;
+	margin-right: 10px;
+	float: left;
+}
+
+
+.liebiao {
+	display: block;
+	line-height: 50px;
+	text-align: center;
+	width: 100%;
+	border-bottom: 1px dotted #E6E6E6;
+}
+
+.biaoti {
+	padding-top: 5px;
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	text-align: left;
+	background-color: #e6e6e6;
+}
+
+.wenzhang {
+	height: 30px;
+	display: block;
+}
+
+.biaoqian {
+	height: 30px;
+	line-height: 30px;
+	text-align: right;
+	display: block;
+	border-bottom: 1px dotted #E6E6E6;
+}
+
+.main_content_right {
+	width: 266px;
+	height: 560px;
+	border: 1px solid #999;
+	float: left;
+}
+.main_content_right span{
+	display: block;
+	height:20px;
+	background-color: #E6E6E6;
+}

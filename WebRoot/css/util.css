@@ -1,0 +1,19 @@
+
+.errorMsg{
+	width: 180px;
+	height: 20px;
+	line-height:20px;
+	border:#FCDBC3 solid 1px;
+	background:#FFF7E5;
+	color:#FF3300;
+	font-size:12px;
+	visibility:hidden;
+}
+
+.required_flag{
+	font-weight:bold;
+	color:#FF0000;
+	font-size:14px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:right;
+}

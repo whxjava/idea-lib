@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <package name="default" namespace="/" extends="json-default">
+    	<!-- UserInfoAction begin -->
+        <action name="login" class="com.whx.action.UserInfoAction" method="login" >
+            <result name="success" type="json"><param name="root">message</param></result>
+        </action>
+       <action name="user" class="com.whx.action.UserInfoAction" method="findPage" >
+            <result name="success" >../admin/userInfo.jsp</result>
+        </action>
+        <action name="userFindById" class="com.whx.action.UserInfoAction" method="findById" >
+            <result name="success" ></result>
+        </action>
+        <action name="userDel" class="com.whx.action.UserInfoAction" method="del" >
+            <result name="success" type="json" ><param name="root">message</param></result>
+        </action>
+    	<!-- UserInfoAction end -->
+    	<!-- SystemMenuAction begin -->
+        <action name="createSystemMenuTree" class="com.whx.action.SystemMenuAction" method="createTree" >
+         	<result type="json" name="success"></result>
+        </action>
+        <action name="systemMenuFindById" class="com.whx.action.SystemMenuAction" method="findById" >
+         	<result type="json" name="success"><param name="root">systemMenu</param></result>
+        </action>
+        <action name="systemMenuAdd" class="com.whx.action.SystemMenuAction" method="add" >
+         	<result type="json" name="success"><param name="root">message</param></result>
+        </action>
+        <action name="systemMenuAll" class="com.whx.action.SystemMenuAction" method="findAll" >
+         	<result type="json" name="success"><param name="root">list</param></result>
+        </action>
+        <action name="systemMenuTop" class="com.whx.action.SystemMenuAction" method="findTop" >
+         	<result type="json" name="success"><param name="root">list</param></result>
+        </action>
+        <action name="systemMenuDelete" class="com.whx.action.SystemMenuAction" method="del" >
+         	<result name="success" type="json"></result>
+        </action>
+    	<!-- SystemMenuAction end -->
+    	<!-- MessageAction begin -->
+        <action name="messageAdd" class="com.whx.action.MessageAction" method="add">
+        	<result type="json" name="success"><param name="root">callbackMsg</param></result>
+        </action> 
+        <action name="messageDel" class="com.whx.action.MessageAction" method="del">
+        	<result type="json" name="success"><param name="root">callbackMsg</param></result>
+        </action> 
+        <action name="messageFindById" class="com.whx.action.MessageAction" method="findById">
+        	<result  name="success">../admin/updateMsg.jsp</result>
+        </action>       
+        <action name="messageFindPage" class="com.whx.action.MessageAction" method="findPage">
+        	<result  name="success">../admin/message.jsp</result>
+        </action>       
+    	<!-- MessageAction end -->
+        <!-- MsgMenuAction begin-->
+        <action name="msgMenuFindByMenuId" class="com.whx.action.MsgMenuAction" method="findByMenuId">
+            <result type="json" name="success"><param name="root">list</param></result>
+        </action>
+        <action name="message" class="com.whx.action.MsgMenuAction" method="findById">
+            <result  name="success">/show.jsp</result>
+        </action>
+        <action name="list" class="com.whx.action.MsgMenuAction" method="findPage">
+            <result  name="success">/list.jsp</result>
+        </action>
+        <action name="msgMenuFindTop" class="com.whx.action.MsgMenuAction" method="findTop">
+            <result  name="success" type="json"><param name="root">list</param></result>
+        </action>
+        <action name="msgMenuFindLast" class="com.whx.action.MsgMenuAction" method="findLast">
+            <result  name="success" type="json"><param name="root">list</param></result>
+        </action>
+        <!-- MsgMenuAction end-->
+    </package>
+</struts>

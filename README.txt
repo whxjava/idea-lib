@@ -1,1 +1,1 @@
-这是一个说明文件
+This is readme file
